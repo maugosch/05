@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Create DOM elements</title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<h3 id="original">Sticks and stones may break my bones, but words will never harm me.</h3>
+		<script>
+			var element = document.getElementById("original");
+			
+			document.getElementById("original").onmouseover = function () {mouseOver ()};
+			document.getElementById("original").onmouseout = function () {mouseOut ()};
+			
+			function mouseOver () {
+				document.getElementById("original").innerHTML = "Kije i kamienie kości mi połamią, ale twoje słowa nigdy mnie nie zranią";
+			
+			};
+			
+			function mouseOut () {
+				document.getElementById("original").innerHTML = "Sticks and stones may break my bones, but words will never harm me.";
+			};
+			
+			
+		</script>
+	</body>
+</html>
